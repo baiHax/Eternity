@@ -1,8 +1,10 @@
 'use strict';
 
 // The server port - the port to run Pokemon Showdown under
-exports.port = 8000;
-
+exports.port = 8080;
+exports.serverid = 'eternity';
+exports.servertoken = 'PfMVsBbPSjHD';
+exports.serverName = 'Eternity';
 // The server address - the address at which Pokemon Showdown should be hosting
 //   This should be kept set to 0.0.0.0 unless you know what you're doing.
 exports.bindaddress = '0.0.0.0';
@@ -46,7 +48,7 @@ exports.wsdeflate = null;
 //   of strings. Each string should be either an IP address or a subnet given
 //   in CIDR notation. You should usually leave this as `false` unless you
 //   know what you are doing.
-exports.proxyip = false;
+exports.proxyip = ['10.0.0.0/8'];
 
 // ofe - write heapdumps if sockets.js workers run out of memory.
 //   If you wish to enable this, you will need to install node-oom-heapdump,
@@ -124,7 +126,7 @@ exports.disablebasicnamefilter = false;
 //   /hidejoins configuration for users.
 //   This feature can lag larger servers - turn this off if your server is
 //   getting more than 80 or so users.
-exports.reportjoins = true;
+exports.reportjoins = false;
 
 // report joins and leaves periodically - sends silent join and leave messages in batches
 //   This setting will only be effective if `reportjoins` is set to false, and users will
@@ -135,7 +137,7 @@ exports.reportjoinsperiod = 0;
 // report battles - shows messages like "OU battle started" in the lobby
 //   This feature can lag larger servers - turn this off if your server is
 //   getting more than 160 or so users.
-exports.reportbattles = true;
+exports.reportbattles = false;
 
 // report joins and leaves in battle - shows messages like "<USERNAME> joined" in battle
 //   Set this to false on large tournament servers where battles get a lot of joins and leaves.
@@ -154,12 +156,12 @@ exports.monitorminpunishments = 3;
 //   Note that this requires punishmentmonitor to be enabled, and therefore requires the `monitorminpunishments`
 //   option to be set to a number greater than zero. If `monitorminpunishments` is set to a value greater than 3,
 //   the autolock will only apply to people who pass this threshold.
-exports.punishmentautolock = false;
+exports.punishmentautolock = true;
 
 // restrict sending links to autoconfirmed users only.
 //   If this is set to `true`, only autoconfirmed users can send links to either chatrooms or other users, except for staff members.
 //   This option can be used if your server has trouble with spammers mass PMing links to users, or trolls sending malicious links.
-exports.restrictLinks = false;
+exports.restrictLinks = true;
 
 // whitelist - prevent users below a certain group from doing things
 //   For the modchat settings, false will allow any user to participate, while a string
@@ -212,7 +214,7 @@ exports.consoleips = ['127.0.0.1'];
 exports.watchconfig = true;
 
 // logchat - whether to log chat rooms.
-exports.logchat = false;
+exports.logchat = true;
 
 // logchallenges - whether to log challenge battles. Useful for tournament servers.
 exports.logchallenges = false;
