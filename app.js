@@ -95,6 +95,8 @@ if (Config.watchconfig) {
  * Set up most of our globals
  *********************************************************/
 
+global.Server = {};
+
 global.Dex = require('./sim/dex');
 global.toId = Dex.getId;
 
@@ -106,10 +108,19 @@ global.Users = require('./users');
 
 global.Punishments = require('./punishments');
 
+global.Console = require('./console.js');
+
 global.Chat = require('./chat');
 
 global.Rooms = require('./rooms');
 
+global.Tells = require('./tells');
+
+global.Ontime = {};
+
+global.Db = require('nef')(require('nef-fs')('config/db'));
+
+delete process.send; // in case we're a child process
 global.Verifier = require('./verifier');
 Verifier.PM.spawn();
 
