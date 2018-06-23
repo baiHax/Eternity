@@ -1,0 +1,627 @@
+body {
+	background: url("https://images7.alphacoders.com/885/thumb-1920-885550.png")left/cover;!important
+	cursor: url("https://www.serebii.net/pokedex-sm/icon/384-m.png"), auto
+}
+
+.header {
+    background:url("https://i.imgur.com/WNZn1lZ.png") no-repeat
+}
+.header .logo{opacity:0}
+
+.userlist {
+	background: rgba(92, 163, 143, 0.5);
+	border-color:rgba(230, 82, 115, 1);
+	color: rgba(246, 222, 0, 1);
+}
+
+.userlist li {
+	background: rgba(255, 255, 255, 0.65);
+	border-color: rgba(230, 82, 115, 1);
+}
+
+/*Tabbar y userbar */
+
+.maintabbarbottom {
+	background: rgba(90, 189, 139, 1);
+	border: 1px solid rgba(230, 82, 115, 1);
+}
+
+.tabbar .closebutton:hover {
+	color: #000000
+}
+.tabbar a.button.cur {
+	background: rgba(90, 189, 139, 1);
+	color: rgba(246, 222, 0, 1);
+	border: 1px solid rgba(230, 82, 115, 1);
+	text-shadow: none
+}
+
+.tabbar.maintabbar {
+	margin-left: 144px;
+	margin-right: 165px;
+	overflow: hidden
+}
+.tabbar li, .tabbar ul {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+.tabbar a.button {
+	text-align: center;
+	color: rgba(246, 222, 0, 1);
+	text-shadow: none;
+	border: 1px solid rgba(230, 82, 115, 1);
+	background: rgba(90, 189, 139, 1);
+	border-bottom-color: #32736f;
+	font-size: 11px
+}
+.tabbar a.button i {
+	display: block;
+	text-align: center;
+	margin: 1px auto 0 auto;
+	font-style: normal;
+	font-size: 14px;
+	height: 14px
+}
+.tabbar a.button span {
+	display: block;
+	overflow: hidden
+}
+.tabbar a.button i.text {
+	font-size: 12px;
+	margin-right: 8px;
+	padding-left: 0;
+	overflow: hidden;
+	font-weight: bold
+}
+.tabbar a.button:hover {
+	background: rgba(74, 131, 115, 1);
+	color: rgba(197, 164, 0, 1);
+	border: 1px solid rgba(156, 41, 82, 1);
+	border-bottom-color: #669693
+}
+.tabbar a.button:active {
+	background: #669693;
+	border-color: #669693;
+	color: #669693
+}
+.tabbar a.button.cur, .tabbar a.button.cur:hover {
+	color: #000;
+	background: #32736f;
+	border-color: #000;
+	border-bottom: 0;
+	padding-top: 3px;
+	padding-bottom: 5px
+}
+.tabbar .closebutton {
+	display: inline-block;
+	margin: 0 0 0 -18px;
+	width: 18px;
+	position: relative;
+	z-index: 11;
+	top: 5px;
+	vertical-align: top
+}
+
+.tabbar .closebutton:hover {
+	color: rgba(156, 41, 82, 1);
+}
+
+.userbar button {
+	background: rgba(90, 189, 139, 1);
+	color: rgba(246, 222, 0, 1);
+	border: 1px solid rgba(230, 82, 115, 1);
+	text-shadow: none;
+	box-shadow: none!important
+}
+
+.userbar button:hover {
+	background: rgba(74, 131, 115, 1);
+	color: rgba(197, 164, 0, 1);
+	border: 1px solid rgba(156, 41, 82, 1);
+	text-shadow: none;
+	box-shadow: none!important
+}
+
+/* Fin Tabbar Userbar */
+
+/* Roomlist */
+
+.roomlist .picon {
+	background: url("http://pokemaniax.com/images/miniatures/rayquaza.png")no-repeat!important
+}
+.roomcounters .picon {
+	background: url("http://pokemaniax.com/images/miniatures/mega-rayquaza.png")no-repeat!important
+}
+
+/* Fin Roomlist */
+
+.pm-window.news-embed{
+	display:none;
+}
+
+.closebutton, .minimizebutton {
+	text-decoration: none;
+	font-size: 14px;
+	color: rgba(230, 82, 115, 1);
+	text-shadow: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	cursor: pointer
+}
+.closebutton:hover, .minimizebutton:hover {
+	color: rgba(156, 41, 82, 1);
+}
+.lobby {
+	border-radius: 100px;
+	border: 2px solid#B13042;
+	padding: 20px;
+	background: radial-gradient(#DE1200, #DE4600, #FF7C00, #CDD92B, #DFBA14, #FFD100)
+}
+.lobby .bottom {
+	border-radius: 32px;
+	background: #669693;
+	color: black;
+	border: 1px solid black
+}
+.lobby button {
+	border: 1px inset black;
+	background: #669693;
+	color: black;
+	padding: 10px
+}
+.lobby button:hover {
+	border: 1px inset black;
+	background: #669693;
+	color: black
+}
+.declare-top {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	color: white;
+	font-style: italic;
+	text-align: center;
+	background: linear-gradient(#FA5168, #E0415D, #E23C52)
+}
+.declare-top-red {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#C00, #BC1D1D, #B13B3B)
+}
+.declare-down {
+	background: #FFD7BD;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#E0415D;
+	border-right: 1px solid#E0415D;
+	border-left: 1px solid#E0415D
+}
+.declare-down button {
+	background: linear-gradient(#FA5168, #E0415D, #E23C52);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid#FA5168;
+	border-radius: 10px;
+	color: white
+}
+.declare-down button:hover {
+	background: linear-gradient(#FA5168, #EE213C, #E23C52);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid#FA5168;
+	border-radius: 10px;
+	color: white
+}
+.declare-down-red {
+	padding: 10px;
+	background: #FFD7BD;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#C00;
+	border-right: 1px solid#C00;
+	border-left: 1px solid#C00
+}
+.declare-down-red button {
+	background: linear-gradient(#C00, #BC1D1D, #B13B3B);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#BC1D1D;
+	color: white
+}
+.declare-down-red button:hover {
+	background: linear-gradient(#C00, #F00, #B13B3B);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#BC1D1D;
+	color: white
+}
+.declare-top-black {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#000, #151515)
+}
+.declare-down-black {
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#151515;
+	border-right: 1px solid#151515;
+	border-left: 1px solid#151515
+}
+.declare-down-black button {
+	background: linear-gradient(#000, #151515);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#151515;
+	color: white
+}
+.declare-down-black button:hover {
+	background: linear-gradient(#151515, #1C1C1C);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#1C1C1C;
+	color: white
+}
+.declare-top-blue {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#00004c, #151515)
+}
+.declare-down-blue {
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#243883;
+	border-right: 1px solid#243883;
+	border-left: 1px solid#243883
+}
+.declare-down-blue button {
+	background: linear-gradient(#1c3285, #243883);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#243883;
+	color: white
+}
+.declare-down-blue button:hover {
+	background: linear-gradient(#1c3285, #293f90);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#1c3285;
+	color: white
+}
+.declare-top-pink {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#f0f, #e8327a)
+}
+.declare-down-pink {
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#F31AB9;
+	border-right: 1px solid#F31AB9;
+	border-left: 1px solid#F31AB9
+}
+.declare-down-pink button {
+	background: linear-gradient(#f0f, #e8327a);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#F31AB9;
+	color: white
+}
+.declare-down-pink button:hover {
+	background: linear-gradient(#B404AE, #8904B1);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#B404AE;
+	color: white
+}
+.declare-top-purple {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#9A2EFE, #8904B1, #8000FF)
+}
+.declare-down-purple {
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#8000FF;
+	border-right: 1px solid#8000FF;
+	border-left: 1px solid#8000FF
+}
+.declare-down-purple button {
+	background: linear-gradient(#9A2EFE, #8904B1, #8000FF);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#8000FF;
+	color: white
+}
+.declare-down-purple button:hover {
+	background: linear-gradient(#9A2EFE, #8904B1, #8904B1);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#8000FF;
+	color: white
+}
+.declare-top-green {
+	padding: 10px;
+	border-radius: 10px 10px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	color: black;
+	background: linear-gradient(#4CA64C, #5dae5d, #3c843c)
+}
+.declare-down-green {
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border-bottom: 1px solid#3c843c;
+	border-right: 1px solid#3c843c;
+	border-left: 1px solid#3c843c
+}
+.declare-down-green button {
+	background: linear-gradient(#4CA64C, #5dae5d, #3c843c);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#449544;
+	color: black
+}
+.declare-down-green button:hover {
+	background: linear-gradient(#5dae5d, #01DF3A, #04B431);
+	font-style: italic;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid#3c843c;
+	color: black
+}
+.broadcast-red {
+	background: linear-gradient(#cc0000, #e50000, #D22F2F);
+	border-radius: 15px;
+	color: white;
+	font-style: italic;
+	font-family: sans-serifal;
+	font-size: 15px;
+	text-shadow: 0px 2px black;
+	padding: 10px;
+	border: 2px solid#BB2B44
+}
+.broadcast-green {
+	background: linear-gradient(#00A800, #198c19);
+	border-radius: 15px;
+	font-size: 15px;
+	color: white;
+	font-family: sans-serifal;
+	font-style: italic;
+	text-shadow: 0px 2px black;
+	padding: 10px;
+	border: 2px solid#46a346
+}
+.broadcast-blue {
+	background: linear-gradient(#00004c, #405694);
+	border-radius: 15px;
+	font-size: 15px;
+	color: white;
+	font-family: sans-serifal;
+	font-style: italic;
+	text-shadow: 0px 2px black;
+	padding: 10px
+}
+.broadcast-blue button {
+	background: linear-gradient(#050505, #2E2EFE);
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid#08088A;
+	color: white
+}
+.broadcast-blue button:hover {
+	border-radius: 4px;
+	background: linear-gradient(#2E2EFE, #000)
+}
+.roomlist a.ilink {
+	background: #669693;
+	padding: 15px;
+	color: black;
+	border: 2px solid #32736f;
+	text-shadow: 0px 0px black
+}
+.battleform label {
+	background: url("http://i.imgur.com/yFWeHx0.png") no-repeat scroll left center transparent!important;
+	font-style: italic;
+	padding: 4px;
+	color: #FFF;
+	text-align: left;
+	text-shadow: none!important
+}
+
+/*			Menugroups			*/
+
+.menugroup .select:disabled {
+	background: rgba(90, 189, 139, 1);
+	color: rgba(246, 222, 0, 1);
+	border: 1px solid rgba(230, 82, 115, 1);
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.menugroup .select:disabled:hover {
+	background: rgba(74, 131, 115, 1);
+	color: rgba(197, 164, 0, 1);
+	border: 1px solid rgba(156, 41, 82, 1);
+	text-shadow: none
+}
+
+.menugroup {
+	background: rgba(92, 163, 143, 0.5);
+	color: rgba(246, 222, 0, 1);
+	border: 1px solid rgba(156, 41, 82, 1);
+	text-shadow: none
+}
+.menugroup .button.mainmenu1, .menugroup .button.mainmenu2, .menugroup .button.mainmenu3, .menugroup .button.mainmenu4, .menugroup .button.mainmenu5 {
+	background: rgba(90, 189, 139, 1);
+	color: rgba(246, 222, 0, 1);
+	border: 1px solid rgba(230, 82, 115, 1);
+}
+
+.menugroup .button.mainmenu1:hover, .menugroup .button.mainmenu2:hover, .menugroup .button.mainmenu3:hover, .menugroup .button.mainmenu4:hover, .menugroup .button.mainmenu5:hover {
+	background: rgba(74, 131, 115, 1);
+	color: rgba(197, 164, 0, 1);
+	border: 1px solid rgba(156, 41, 82, 1);
+}
+
+/*			Fin Menugroups			*/
+
+.button-offline {
+	background: red;
+	border: 2px solid red;
+	border-radius: 5px;
+	min-width: 50px;
+	padding: 2px
+}
+.button-online {
+	background: green;
+	border: 2px solid green;
+	border-radius: 5px;
+	min-width: 50px;
+	padding: 2px
+}
+.shop {
+	border: 1px;
+	padding: 2px;
+	background: black;
+	color: white
+}
+.shop td {
+	background: linear-gradient(#610B21, #BB2B44, #BB2B44);
+	color: white;
+	font-style: italic;
+	text-align: center
+}
+.level-two {
+	background: #E84E4E
+}
+.buying-one {
+	color: black;
+	font-weight: bold
+}
+.userdata {
+	background: linear-gradient(#405694, #00004c);
+	border-radius: 10px;
+	padding: 5px;
+	color: white
+}
+.userdata span {
+	font-size: 18px
+}
+.uno-card.red {
+	background: red;
+	background: linear-gradient(rgba(255, 0, 0, 1), rgba(242, 84, 84, 1));
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	height: 80px;
+	width: 56px;
+	border-radius: 5px;
+	color: white;
+	font-size: 26px
+}
+.uno-card.black {
+	background: black;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.55));
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	height: 80px;
+	width: 56px;
+	border-radius: 5px;
+	color: white;
+	font-size: 26px
+}
+.uno-card.blue {
+	background: blue;
+	background: linear-gradient(rgba(40, 40, 255, 1), rgba(125, 125, 255, 0.9));
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	height: 80px;
+	width: 56px;
+	border-radius: 5px;
+	color: white;
+	font-size: 26px
+}
+.uno-card.green {
+	background: green;
+	background: linear-gradient(rgba(0, 122, 0, 1), rgba(0, 185, 0, 0.9));
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	height: 80px;
+	width: 56px;
+	border-radius: 5px;
+	color: white;
+	font-size: 26px
+}
+.uno-card.yellow {
+	background: orange;
+	background: linear-gradient(rgba(231, 197, 49, 1), rgba(255, 120, 71, 1));
+	border: 2px solid rgba(33, 68, 72, 0.59);
+	height: 80px;
+	width: 56px;
+	border-radius: 5px;
+	color: white;
+	font-size: 26px
+}
+/* COLORS START */
+[class$="chatmessage-memeses"] strong, [class$="chatmessage-memeses mine"] strong, [class$="chatmessage-memeses highlighted"] strong, [id$="-userlist-user-memeses"] strong em, [id$="-userlist-user-memeses"] strong, [id$="-userlist-user-memeses"] span{
+color: #01a1ff !important;
+}
+[class$="chatmessage-maelfredbear"] strong, [class$="chatmessage-maelfredbear mine"] strong, [class$="chatmessage-maelfredbear highlighted"] strong, [id$="-userlist-user-maelfredbear"] strong em, [id$="-userlist-user-maelfredbear"] strong, [id$="-userlist-user-maelfredbear"] span{
+color: #ff0000 !important;
+}
+[class$="chatmessage-blizzardsspirit"] strong, [class$="chatmessage-blizzardsspirit mine"] strong, [class$="chatmessage-blizzardsspirit highlighted"] strong, [id$="-userlist-user-blizzardsspirit"] strong em, [id$="-userlist-user-blizzardsspirit"] strong, [id$="-userlist-user-blizzardsspirit"] span{
+color: #21D3FF !important;
+}
+/* COLORS END */
+/* ICONS START */
+[id$="-userlist-user-articasparkle"] {
+background: url("im.ezgif.com/tmp/ezgif-1-85df1ac1f1.gif") no-repeat right !important;
+}
+[id$="-userlist-user-nacho36188"] {
+background: url("https://i.pinimg.com/originals/d6/68/ab/d668abc72809303852c27275e6a56775.gif") no-repeat right !important;
+}
+[id$="-userlist-user-absolstreamx"] {
+background: url("https://jeu.video/forum/uploads/monthly_2015_10/3.gif.5bec0794803ee22a8361bff245481185.gif.d9d841a10552304e81378edf13c301d2.gif") no-repeat right !important;
+}
+[id$="-userlist-user-icedianciediamon"] {
+background: url("http://gifmaniacos.es/wp-content/uploads/2017/08/colores-protagonismo-gif-neon-gifmaniacos.es-22.gif") no-repeat right !important;
+}
+/* ICONS END */
