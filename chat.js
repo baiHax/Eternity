@@ -1232,6 +1232,30 @@ Chat.loadPlugins = function () {
 		if (plugin.hostfilter) Chat.hostfilters.push(plugin.hostfilter);
 		if (plugin.loginfilter) Chat.loginfilters.push(plugin.loginfilter);
 	}
+
+	let customfiles = FS('server-plugins/').readdirSync();
+
+	for (const customfile of customfiles) {
+		if (customfile.substr(-3) !== '.js') continue;
+		const serverplugin = require(`./server-plugins/${customfile}`);
+
+		Object.assign(commands, serverplugin.commands);
+
+		if (serverplugin.chatfilter) Chat.filters.push(serverplugin.chatfilter);
+		if (serverplugin.namefilter) Chat.namefilters.push(serverplugin.namefilter);
+		if (serverplugin.hostfilter) Chat.hostfilters.push(serverplugin.hostfilter);
+	}
+
+	// Load games for Console
+	Server.gameList = {};
+	for (let file of FS('game-cards').readdirSync()) {
+		if (file.substr(-3) !== '.js') continue;
+		const gamecard = require(`./game-cards/${file}`);
+		Object.assign(commands, gamecard.commands);
+		Object.assign(pages, gamecard.pages);
+		if (gamecard.box && gamecard.box.name) gamecard.box.id = toId(gamecard.box.name);
+		Server.gameList[gamecard.box.id] = gamecard.box;
+	}
 };
 
 /**
